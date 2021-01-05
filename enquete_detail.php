@@ -22,7 +22,9 @@ $enquete_data = $statement->fetchAll();
                 質問ID: <?php echo htmlspecialchars($row['ID']); ?>
                 <?php echo nl2br(htmlspecialchars($row['質問文'])); ?>
                 <input type="text" name="answer1" size=40 >
-                <input type="submit" value="送信">
+        <p>
+                    <input type="submit" value="送信">
+        </P>
             </li>
         <?php endforeach; ?>
     </ul>
