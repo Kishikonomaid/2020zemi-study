@@ -15,6 +15,7 @@ $enquete_data = $statement->fetchAll();
 ?>
 <html>
 <body>
+<form action="enquete_detail.php" method="post">
     <ul>
         <?php foreach ($enquete_data as $row): ?>
             <li>
@@ -25,5 +26,6 @@ $enquete_data = $statement->fetchAll();
             </li>
         <?php endforeach; ?>
     </ul>
+        </form>
 </body>
 </html>
