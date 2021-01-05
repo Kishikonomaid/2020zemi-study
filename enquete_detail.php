@@ -26,11 +26,12 @@ $enquete_data = $statement->fetchAll();
          <p>
          <input type="text" name="answer1" size=40 >
         </P>
+        <?php endforeach; ?>
         <p>
          <input type="submit" value="送信">
         </P>
             </li>
-        <?php endforeach; ?>
+       
     </ul>
         </form>
 </body>
