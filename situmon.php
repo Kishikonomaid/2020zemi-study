@@ -29,7 +29,7 @@ if (
     $statement = $pdo->prepare(
         "INSERT INTO 質問一覧 (質問文) VALUES (:question1), (:question2), (:question3), (:question4);"
     );
-    $statement->execute([
+    $statement->execute([\
         ':question1' => $_POST['質問1'],
         ':question2' => $_POST['質問2'],
         ':question3' => $_POST['質問3'],
